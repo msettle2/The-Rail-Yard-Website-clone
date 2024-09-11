@@ -172,14 +172,76 @@ button {
 	/* Header Section */
 	#header {
 		width: 100%;
-		
+		justify-content: space-between;
 	}
 	#header nav {
 		margin-right: 1rem;
+		width: 80%;
+		display: none;
 	}
 	#header img {
 		margin-left: 1rem;
 		margin-right: -5rem;
+	}
+
+	/* Dropdown Button */
+	
+	/* The container <div> - needed to position the dropdown content */
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropbtn {
+		/* background-color: #ffffff80; */
+		background-color: #2C363F;
+		height: 155px;
+		width: 5rem;
+
+		font-size: var(--fs-paragraph);
+		font-weight: bold;
+		padding-top: 2rem;
+	}
+	
+	.dropbtn i {
+		color: #ffffff80;
+		font-size: 2rem;
+		padding-top: 2rem;
+	}
+	
+	/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #838d9a;
+		top: 155px;
+		right: 0px;
+		/* min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1; */
+	}
+	
+	/* Links inside the dropdown */
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover, .dropdown-content a:focus, .dropdown-content a:active {
+		background-color: #ddd;
+	}
+	
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content, .dropdown:active .dropdown-content {
+		display: block;
+	}
+	
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn, .dropdown:focus .dropbtn, .dropdown:active .dropbtn {
+		background-color: #3f444a;
 	}
 }
 
@@ -402,7 +464,7 @@ button {
 
 .footer-socials-facebook {
 	display: flex;
-	gap: 4.1rem;
+	gap: 4.9rem;
 	justify-content: right;
 }
 
@@ -415,27 +477,58 @@ button {
 		background-color: #2C363F;
 		color: #FFFFFF;
 		font-weight: var(--fw-light);
-		font-size: 20px;
+		font-size: 18px;
 		gap: 0rem;
 		padding-bottom: 1rem;
 	}
 	#footer > div {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: center;
+		flex-direction: column;
 		gap: 2rem;
 	}
+	.footer-hours {
+		justify-content: center;
+		text-align: center;
+	}
+	.footer-location {
+		margin-top: 0rem;
+		justify-content: center;
+		text-align: center;
+	}	
 	.footer-contact {
 		gap: 1.6rem;
-		margin-left: 2rem;
+		margin-left: 1rem;
+		justify-content: center;
+		text-align: center;
+	}
+	.footer-socials {
+		justify-content: center;
+		margin-top: 0.5rem;
 	}
 	.footer-socials p {
-		margin-left: -2rem;
+		/* text-align: left; */
+		text-align: center;
+	}
+	.footer-socials-insta {
+		/* margin-left: ; */
+		justify-content: center;
 	}
 	.footer-socials-insta p {
 		margin-left: -3rem;
+		
+	}
+	.footer-socials-facebook {
+		/* margin-left: ; */
+		justify-content: center;
+		
 	}
 	.footer-socials-facebook p {
 		margin-left: -3rem;
+		/* margin-right: -1rem; */
+		margin-right: -0.6rem;
+		
+		
 	}
 }
 
@@ -521,15 +614,20 @@ button {
 	}
 	.mobileHero-second-container {
 		flex-direction: column;
-		margin-top: 5rem;
+		margin-top: -1rem;
+		margin-bottom: 0rem;
+	}
+	.mobileHero-container {
+		gap: 0rem;
 	}
 	.mobileHero-container div {
 		width: auto;
 		height: 20rem;
 	}
 	.mobileHero-container img {
-		width: auto;
-		height: 20rem;
+		width: 100vw;
+		height: auto;
+		border: 0px;
 	}
 }
 
@@ -655,6 +753,7 @@ button {
 .priced-separately-container{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	gap: 24rem;
 	margin-top: 3rem;
 	margin-bottom: 4.5rem;
@@ -667,12 +766,14 @@ button {
 		height: 6rem;
 	}
 	.pricing-container div h3 {
+		margin-left: 2rem;
+		margin-right: 3rem;
 		font-size: 20px;
 	}
 	.pricing-article {
 		margin-left: 1rem;
 		margin-top: 1rem;
-		max-width: 28rem;
+		max-width: 90%;
 	}
 	.pricing-includes {
 		width: 90%;
@@ -692,8 +793,20 @@ button {
 		margin-left: 2rem;
 		width: 10.4rem;
 	}
+	.priced-separately p {
+		text-align:left;
+		/* max-width: 25rem; */
+		max-width: 1000rem;
+		margin-left: 1rem;
+	}
+	.priced-separately p:nth-of-type(1) {
+		margin-top: 2rem;
+	}
 	.priced-separately-container{
 		gap: 1rem;
+		width: 90%;
+		flex-direction: column;
+		margin-left: 1rem;
 	}
 }
 
@@ -761,19 +874,22 @@ button {
 @media (max-width: 500px) {
 	/* How Much Beer Section */
 	.how-much-beer-text {
-		max-width: 30rem;
+		max-width: none;
+		width: 80%;
 	}
 
 	.keg-size-left div {
 		/* width: 25rem;
 		height: 8rem; */
-		max-width: 14rem;
+		max-width: none;
 		height: 6rem;
+		width: 45vw;
 	}
 
 	.keg-size-right div {
-		max-width: 14rem;
+		/* max-width: 14rem; */
 		height: 6rem;
+		width: 45vw;
 	}
 }
 
@@ -862,6 +978,7 @@ button {
 @media (max-width: 500px) {	
 	#mobile-contact-us h1 {
 		text-align: center;
+		width: 90%;
 	}
 }
 
