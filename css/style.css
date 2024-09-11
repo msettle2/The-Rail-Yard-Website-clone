@@ -195,7 +195,7 @@ button {
 	.dropbtn {
 		/* background-color: #ffffff80; */
 		background-color: #2C363F;
-		height: 155px;
+		height: 154px;
 		width: 5rem;
 
 		font-size: var(--fs-paragraph);
