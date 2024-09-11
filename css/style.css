@@ -168,6 +168,10 @@ button {
 	margin-left: -5rem;
 }
 
+.dropdown-container {
+	display: none;
+}
+
 @media (max-width: 500px) {
 	/* Header Section */
 	#header {
