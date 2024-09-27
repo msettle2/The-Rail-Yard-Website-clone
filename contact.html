@@ -6,6 +6,7 @@
 
     <title>title</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/dropDown.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +25,18 @@
             <a href="mobile.html">RailYard Mobile</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <!-- <button class="dropbtn"><i class="fa-solid fa-bars"></i></button> -->
+                <button onclick="myFunction()" class="dropbtn"><i onclick="myFunction()" class="fa-solid fa-bars drop-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="https://www.taphunter.com/location/the-railyard/5113224041988096">Menu</a>
+                    <a href="mobile.html">RailYard Mobile</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+              </div>
+        </div>
     </header>
 
     <section id="contact-info">
@@ -58,7 +71,7 @@
                     <label for="message">Message:</label>
                     <input type="text" id="message" name="message" placeholder="Enter your message">
                 </div>
-                <button type="submit">
+                <button class="submitBtn" type="submit">
                     Contact Us!
                 </button>
             </Form>
@@ -66,45 +79,55 @@
     </section>
 
     <footer id="footer">
-        <div class="footer-hours">
-            <p>Hours:</p>
-            <li>
-                Thurs - Fri: 4 - 10 pm
-            </li>
-            <li>
-                Sat: 1 - 10 pm
-            </li>
-            <li>
-                Sun: 1-8 pm
-            </li>
-            <li>
-                Mon - Wed: Closed
-            </li>
-        </div>
-        <div class="footer-location">
-            <p>Location:</p>
-            <p>203 W. Depot Alley</p>
-            <p>Elkin, NC, US 28621</p>
-        </div>
-        <div class="footer-contact">
-            <div class="footer-contact-phones">
-                <p>Phone:</p>
-                <p>+1(336) 818-9293</p>
+        <div>
+            <div class="footer-hours">
+                <p>Hours:</p>
+                <li>
+                    Thurs - Fri: 4 - 10 pm
+                </li>
+                <li>
+                    Sat: 1 - 10 pm
+                </li>
+                <li>
+                    Sun: 1-8 pm
+                </li>
+                <li>
+                    Mon - Wed: Closed
+                </li>
             </div>
-            <div class="footer-contact-email">
-                <p>Email:</p>
-                <p>mitzi@elkinrailyard.com</p>
+            <div class="footer-location">
+                <p>Location:</p>
+                <p>203 W. Depot Alley</p>
+                <p>Elkin, NC, US 28621</p>
             </div>
         </div>
-        <div class="footer-socials">
-            <p>Follow Us on Social Media:</p>
-            <div class="footer-socials-insta">
-                <i class="fa-brands fa-instagram"></i>
-                <p>@elkinrailyard</p>
+        <div>
+            <div class="footer-contact">
+                <div class="footer-contact-phones">
+                    <p>Phone:</p>
+                    <p>+1(336) 818-9293</p>
+                </div>
+                <div class="footer-contact-email">
+                    <p>Email:</p>
+                    <p>mitzi@elkinrailyard.com</p>
+                </div>
             </div>
-            <div class="footer-socials-facebook">
-                <i class="fa-brands fa-facebook"></i>
-                <p>@Elkin RailYard</p>
+            <div class="footer-socials">
+                <p>Follow Us on Social Media:</p>
+                <a href="https://www.instagram.com/elkinrailyard/">
+                    <div class="footer-socials-insta">
+                        <i class="fa-brands fa-instagram"></i>
+                        <!-- Hyper link the @'s' -->
+                        <p>@elkinrailyard</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/p/Elkin-RailYard-100067120931800/">
+                    <div class="footer-socials-facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        <!-- Hyper link the @'s' -->
+                        <p>@Elkin RailYard</p>
+                    </div>
+                </a>
             </div>
         </div>
     </footer>
