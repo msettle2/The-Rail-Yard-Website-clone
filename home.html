@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>title</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/dropDown.js"></script> <!--THIS COULD CAUSES ERRORS-->
+    <script src="/js/headerScroll.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2c635c0b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="trans-header">
+        <div>
+            <a href="home.html">
+                <img src="images/Logo.png" alt="RailYard Logo">
+            </a>
+
+        </div>
+        <nav>
+            <a href="home.html"><li>Home</li></a>
+            <a href="https://www.taphunter.com/location/the-railyard/5113224041988096"><li>Menu</li></a>
+            <a href="mobile.html"><li>RailYard Mobile</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </nav>
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <!-- <button class="dropbtn"><i class="fa-solid fa-bars"></i></button> -->
+                <button onclick="myFunction()" class="dropbtn"><i onclick="myFunction()" class="fa-solid fa-bars drop-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="https://www.taphunter.com/location/the-railyard/5113224041988096">Menu</a>
+                    <a href="mobile.html">RailYard Mobile</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="homeHero">
+            <!-- <video width="320" height="240" autoplay muted loop plays-inline> -->
+                <!-- <source src="videos/ElkinRYFinal-noaudio.mp4" type="video/mp4"> -->
+                <!-- <source src="https://youtu.be/RhBlIdKbYos" type="video/mp4">
+                
+                
+              Your browser does not support the video tag.
+              </video> -->
+              <!-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1013685862?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ElkinRYFinal-noaudio"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
+              
+              <!-- <div class="container-placer">
+                <div class="embed-container"> -->
+                    <iframe width="420" height="315"src="https://www.youtube.com/embed/RhBlIdKbYos?autoplay=1&mute=1&playlist=RhBlIdKbYos&loop=1&controls=0&modestbranding=1"></iframe>
+                <!-- </div>
+            </div> -->
+        </section>
+        <section id="spacer">
+            
+        </section>
+        <section id="welcome">
+            <!-- <div class="welcome-img-container"> -->
+                <img class="welcome-img" src="images/railyard-drone-shot.png" alt="picture of the railyard from above">
+            <!-- </div> -->
+            <div class="welcome-text">
+                <h1>Welcome to the RailYard</h1>
+                <h3>About the Garden</h3>
+                <p>Opening on March 17, 2023, The Elkin RailYard is an 
+                    all outdoor beer garden which sits in the heart of 
+                    the beautiful Yadkin Valley in Elkin, NC. The bar 
+                    itself is located in one of our two graffitied shipping 
+                    containers and consists of 16 taps featuring a wide 
+                    variety of beer from not only NC but all over the world. 
+                </p>
+                <p>Come meet our amazing staff and grab a beer. Sit back 
+                    and relax with your family, friends and pups.  Enjoy 
+                    our daily rotating food trucks, comfy outdoor seating, 
+                    cozy fire pits and frequent live music events.  Can’t 
+                    wait to see you there!   
+                </p>
+            </div>
+            
+        </section>
+
+        <section id="location">
+            <div class="location-text-container">
+                <h1>Come Visit Us</h1>
+                <h3>Hours & Location</h3>
+                <p class="location-text-container-p">We are open Thursday through Sunday.</p>
+                <div class="location-li-container">
+                    <div class="location-li-left">
+                        <li>
+                            Thursday:
+                        </li>
+                        <li>
+                            Friday:
+                        </li>
+                        <li>
+                            Saturday:
+                        </li>
+                        <li>
+                            Sunday:
+                        </li>
+                        <li>
+                            Mon - Wed:
+                        </li>
+                    </div>
+                    <div class="location-li-right">
+                        <li>
+                            4 - 10 pm
+                        </li>
+                        <li>
+                            4 - 10 pm
+                        </li>
+                        <li>
+                            1 - 10 pm
+                        </li>
+                        <li>
+                            1 - 8 pm
+                        </li>
+                        <li>
+                            Closed
+                        </li>
+                    </div>    
+                </div>
+                
+                <p class="location-address-text">Located at:</p>
+                <p class="location-address-text">203 W. Depot Alley,</p>
+                <p class="location-address-text">Elkin, NC 28621</p>
+            </div>
+            <div>
+                <img class="location-img" src="images/location.png" alt="screenshot of the railyard location on google maps">
+            </div>
+        </section>
+
+        <section id="quicklinks">
+            <div class="quicklinks-boxes-large">
+                <a href="https://www.taphunter.com/location/the-railyard/5113224041988096">
+                    <div class="quicklinks-boxes-small">
+                        <p>Menu</p>
+                    </div>
+                </a>
+            </div>
+            <div class="quicklinks-boxes-large">
+                <a href="/mobile.html">
+                    <div class="quicklinks-boxes-small">
+                        <p>RailYard</p>
+                        <p>Mobile</p>
+                    </div>
+                </a>
+            </div>
+            <div class="quicklinks-boxes-large">
+                <a href="/contact.html">
+                    <div class="quicklinks-boxes-small">
+                        <p>Contact</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div>
+            <div class="footer-hours">
+                <p>Hours:</p>
+                <li>
+                    Thurs - Fri: 4 - 10 pm
+                </li>
+                <li>
+                    Sat: 1 - 10 pm
+                </li>
+                <li>
+                    Sun: 1-8 pm
+                </li>
+                <li>
+                    Mon - Wed: Closed
+                </li>
+            </div>
+            <div class="footer-location">
+                <p>Location:</p>
+                <p>203 W. Depot Alley</p>
+                <p>Elkin, NC, US 28621</p>
+            </div>
+        </div>
+        <div>
+            <div class="footer-contact">
+                <div class="footer-contact-phones">
+                    <p>Phone:</p>
+                    <p>+1(336) 818-9293</p>
+                </div>
+                <div class="footer-contact-email">
+                    <p>Email:</p>
+                    <p>mitzi@elkinrailyard.com</p>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <p>Follow Us on Social Media:</p>
+                <a href="https://www.instagram.com/elkinrailyard/">
+                    <div class="footer-socials-insta">
+                        <i class="fa-brands fa-instagram"></i>
+                        <!-- Hyper link the @'s' -->
+                        <p>@elkinrailyard</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/p/Elkin-RailYard-100067120931800/">
+                    <div class="footer-socials-facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                        <!-- Hyper link the @'s' -->
+                        <p>@Elkin RailYard</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
